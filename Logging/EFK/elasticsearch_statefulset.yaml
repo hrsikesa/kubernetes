@@ -71,7 +71,7 @@ spec:
         app: elasticsearch
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: do-block-storage   # Change Storage Class according Storage Provider
+      storageClassName: do-block-storage   # Change Storage Class according to Cloud Provider
       resources:
         requests:
           storage: 100Gi
