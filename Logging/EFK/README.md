@@ -1,12 +1,12 @@
 This is Repo contains manifests for deploying  EFK(ElasticSearch, FluentD, Kibana) Stack on Kubernetes.
 
-We run ElastiSearch as StatefulSets, Kibana as Deployment, FluentD as DaemonSets
+We are running ElastiSearch as StatefulSets, Kibana as Deployment, FluentD as DaemonSets
 
 Create a Namespace kube-logging, We will deploy EFK Stack in this Namespace.
 
-In ElasticSearch  Stateful Set we are running 3 Replicas, but we can decrease or increasing it as per our requirenment
+In ElasticSearch Stateful Set we are running 3 Replicas, but we can decrease or increasing it as per our requirenment
 Also we will be using Headless Service for accessing ElasticSearch Pods.
-Service Name/DNS of Accessing Particular Pod - es-cluster-0.elasticsearch.kube-logging.svc.cluster.local
+Service Name/DNS for Accessing Particular Pod - es-cluster-0.elasticsearch.kube-logging.svc.cluster.local
 where es-cluster-0=Name of Pod, elasticsearch.kube=Service Name, kube-logging=Namespace
 We use it so we can access particular Pod, instead of to just accesing Service(which will forward requests to Pod in Round Robin)
 
