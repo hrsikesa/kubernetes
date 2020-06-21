@@ -21,7 +21,7 @@ After creating Sample Nginx Deployment
 1. Create index.html on NFS Server in this location /srv/nfs/kubedata
     & add any content in index.html 
 2. Create NodePort Service for Nginx Deployment, so we can access index.html via Browser.
-   # kubectl expose deployment nginx-deploy --port=80 --type=NodePort
+    # kubectl expose deployment nginx-deploy --port=80 --type=NodePort
 3. Now any change we make in index.html on NFS Server same will be reflected in Nginx Pod. 
    Again access it via browser
 ```
