@@ -22,4 +22,4 @@ On K8s Woker Nodes we can run below commands to verify whether NFS is working wi
  
 After creating all required objects, if we create PVC it will dynamically provisions a new PV & on NFS Server under /srv/nfs/kubedata a new directory is created for every PVC/PV we create.
 
-For more information refer to [this GitHub Link](https://github.com/kubernetes-incubator/external-storage/blob/master/nfs-client/README.md)
+For more information refer to this [GitHub Link](https://github.com/kubernetes-incubator/external-storage/blob/master/nfs-client/README.md)
