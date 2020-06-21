@@ -6,9 +6,9 @@ For this we must have NFS Server configured for our Kubernetes Nodes(Add K8S Nod
 On K8s Nodes we can run below commands to verify whether NFS is working with K8S Worker Nodes or not 
   ```sh
   1. # showmount -e <Ip of NFS Server>
-   2. Mount NFS Shared Directory to Worker Node
+  2. Mount NFS Shared Directory to Worker Node
       # mount -t nfs <Ip of NFS Server>:/srv/nfs/kubedata /mnt  
-   3. After it is successfully mounted unmount it 
+  3. After it is successfully mounted unmount it 
       # umount /mnt
 ```
 
